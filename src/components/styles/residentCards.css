@@ -1,0 +1,200 @@
+
+
+.conatiner{
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+.container-img{
+    
+    background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url("../img/imagen-1.png");  
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+
+}
+
+.resident-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+
+.resident{
+    
+    font-size: 1rem;
+    width: 100;
+    max-width: 350px;
+    background-color: #062226;
+    color: white;
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+
+.resident-header{
+    position: relative;
+}
+
+.resident-status{
+    position: absolute;
+    top: 15%;
+    width: 40%;
+    min-width: 100px;
+    background-color: #062206;
+    padding: 0.3em 0.8em;
+    border-radius: 0 0.6em 0.6em 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.resident-circle{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f3eaea;
+}
+
+.resident-body{
+    
+    padding: 0.8em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;   
+
+}
+
+.resident-body .resident-name{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resident-label{
+
+    font-weight: 600;
+}
+
+.resident-value{
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+.Alive{
+    background-color: lightgreen;
+}
+
+.Dead{
+    background-color: lightcoral
+}
+
+.unknown{
+    background-color: lightblue
+}
+
+.input-btn{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.input-search{
+    border-radius: 0.3em 0 0 0.3em;
+    padding: 10px;
+}
+
+.input-search-btn{
+    border-radius: 0 0.3em 0.3em 0;
+    background-color: limegreen;
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.input-search-btn:hover{
+    background-color: limegreen;    
+    color:  rgb(7, 12, 7);
+    font-weight: 500;
+}
+
+.location{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #062226;
+    color: white;
+    
+
+    display: flex;
+    flex-direction:column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.location-title{
+    color: limegreen
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.location ul .location-info{
+    font-weight: 600;
+}
+
+.location ul .location-info-value{
+    
+    color: rgba(255,255,255,0.5);
+}
+
+@media (min-width: 500px) {
+    
+    .container-img{
+
+        height: 20vh;
+        
+    }
+
+    .input-btn{   
+
+        margin-top: 50px;
+        margin-bottom: 50px;       
+        
+    }
+
+    .location{
+        
+        padding: 20px;       
+
+    }
+
+    .resident-container{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+
+}
+
+
