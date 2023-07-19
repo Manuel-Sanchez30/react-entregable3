@@ -13,9 +13,6 @@
 body{
     font-family: 'Asap Condensed', sans-serif;
     background-color: #0e515a;
-    max-width: 1440px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 h1, h2, h3, p, ul{
